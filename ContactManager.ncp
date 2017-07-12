@@ -1,0 +1,128 @@
+<Project>
+  <Name>ContactManager</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Contact</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Contact</Name>
+        <Access>Public</Access>
+        <Location left="599" top="180" />
+        <Size width="226" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public int ID</Member>
+        <Member type="Field">public List&lt;Email&gt; EmailAddresses</Member>
+        <Member type="Field">public List&lt;PhoneNumber&gt; PhoneNumbers</Member>
+        <Member type="Field">public ContactInformation Information</Member>
+        <Member type="Field">public DateTime Created</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Email</Name>
+        <Access>Public</Access>
+        <Location left="962" top="39" />
+        <Size width="162" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public string Label</Member>
+        <Member type="Field">public string Email</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PhoneNumber</Name>
+        <Access>Public</Access>
+        <Location left="962" top="180" />
+        <Size width="162" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public string Number</Member>
+        <Member type="Field">public string Label</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ContactInformation</Name>
+        <Access>Public</Access>
+        <Location left="962" top="330" />
+        <Size width="162" height="196" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public string Name</Member>
+        <Member type="Field">public string Address</Member>
+        <Member type="Field">public string City</Member>
+        <Member type="Field">public string Country</Member>
+        <Member type="Field">public string Note</Member>
+        <Member type="Field">public string Website</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CorprateContactInformation</Name>
+        <Access>Public</Access>
+        <Location left="1089" top="620" />
+        <Size width="214" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public string NIP</Member>
+        <Member type="Field">public string REGON</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PersonalContactInformation</Name>
+        <Access>Public</Access>
+        <Location left="842" top="620" />
+        <Size width="201" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public string Nickname</Member>
+        <Member type="Field">public string Gender</Member>
+        <Member type="Field">public DateTime DateOfBirth</Member>
+        <Member type="Field">public string Organization</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>853</X>
+          <Y>258</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>850</X>
+          <Y>276</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>850</X>
+          <Y>293</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1114</X>
+          <Y>551</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
