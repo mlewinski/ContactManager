@@ -13,6 +13,7 @@
         <Member type="Field">public int ID</Member>
         <Member type="Field">public List&lt;Email&gt; EmailAddresses</Member>
         <Member type="Field">public List&lt;PhoneNumber&gt; PhoneNumbers</Member>
+        <Member type="Field">public List&lt;Communicator&gt; Communicators</Member>
         <Member type="Field">public ContactInformation Information</Member>
         <Member type="Field">public DateTime Created</Member>
         <Modifier>None</Modifier>
@@ -24,13 +25,13 @@
         <Size width="162" height="111" />
         <Collapsed>False</Collapsed>
         <Member type="Field">public string Label</Member>
-        <Member type="Field">public string Email</Member>
+        <Member type="Field">public string EmailAddress</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
         <Name>PhoneNumber</Name>
         <Access>Public</Access>
-        <Location left="962" top="180" />
+        <Location left="1137" top="39" />
         <Size width="162" height="111" />
         <Collapsed>False</Collapsed>
         <Member type="Field">public string Number</Member>
@@ -73,40 +74,52 @@
         <Member type="Field">public string Organization</Member>
         <Modifier>None</Modifier>
       </Entity>
+      <Entity type="Class">
+        <Name>Communicator</Name>
+        <Access>Public</Access>
+        <Location left="1313" top="39" />
+        <Size width="162" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public string Number</Member>
+        <Member type="Field">public string Label</Member>
+        <Modifier>None</Modifier>
+      </Entity>
     </Entities>
     <Relationships>
       <Relationship type="Association" first="0" second="1">
-        <Label>
-        </Label>
         <StartOrientation>Horizontal</StartOrientation>
-        <EndOrientation>Horizontal</EndOrientation>
+        <EndOrientation>Vertical</EndOrientation>
         <BendPoint relativeToStartShape="True">
           <X>853</X>
           <Y>258</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1056</X>
+          <Y>183</Y>
         </BendPoint>
         <Direction>Unidirectional</Direction>
         <AssociationType>Aggregation</AssociationType>
       </Relationship>
       <Relationship type="Association" first="0" second="2">
-        <Label>
-        </Label>
         <StartOrientation>Horizontal</StartOrientation>
-        <EndOrientation>Horizontal</EndOrientation>
+        <EndOrientation>Vertical</EndOrientation>
         <BendPoint relativeToStartShape="True">
-          <X>850</X>
-          <Y>276</Y>
+          <X>854</X>
+          <Y>274</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1214</X>
+          <Y>218</Y>
         </BendPoint>
         <Direction>Unidirectional</Direction>
         <AssociationType>Aggregation</AssociationType>
       </Relationship>
       <Relationship type="Association" first="0" second="3">
-        <Label>
-        </Label>
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <BendPoint relativeToStartShape="True">
           <X>850</X>
-          <Y>293</Y>
+          <Y>313</Y>
         </BendPoint>
         <Direction>Unidirectional</Direction>
         <AssociationType>Composition</AssociationType>
@@ -122,6 +135,22 @@
           <X>1114</X>
           <Y>551</Y>
         </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="0" second="6">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>850</X>
+          <Y>288</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1386</X>
+          <Y>260</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
       </Relationship>
     </Relationships>
   </ProjectItem>
