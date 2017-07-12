@@ -28,7 +28,7 @@
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
-        <Name>PhoneNumber</Name>
+        <Name>Phone</Name>
         <Access>Public</Access>
         <Location left="1056" top="515" />
         <Size width="162" height="111" />
