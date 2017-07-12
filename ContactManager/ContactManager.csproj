@@ -68,6 +68,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Communicator.cs" />
+    <Compile Include="Model\Contact.cs" />
+    <Compile Include="Model\ContactInformation.cs" />
+    <Compile Include="Model\CorporateContactInformation.cs" />
+    <Compile Include="Model\Email.cs" />
+    <Compile Include="Model\GenericCommunicator.cs" />
+    <Compile Include="Model\PersonalContactInformation.cs" />
+    <Compile Include="Model\Phone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
