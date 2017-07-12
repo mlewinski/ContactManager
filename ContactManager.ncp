@@ -34,8 +34,8 @@
         <Location left="1137" top="39" />
         <Size width="162" height="111" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">public string Number</Member>
         <Member type="Field">public string Label</Member>
+        <Member type="Field">public string Number</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -80,8 +80,8 @@
         <Location left="1313" top="39" />
         <Size width="162" height="111" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">public string Number</Member>
         <Member type="Field">public string Label</Member>
+        <Member type="Field">public string Number</Member>
         <Modifier>None</Modifier>
       </Entity>
     </Entities>
