@@ -8,7 +8,7 @@
         <Name>Contact</Name>
         <Access>Public</Access>
         <Location left="1920" top="512" />
-        <Size width="226" height="216" />
+        <Size width="226" height="179" />
         <Collapsed>False</Collapsed>
         <Member type="Field">public int ID</Member>
         <Member type="Field">public List&lt;Email&gt; EmailAddresses</Member>
@@ -95,25 +95,29 @@
       <Entity type="Class">
         <Name>Group</Name>
         <Access>Public</Access>
-        <Location left="1670" top="512" />
-        <Size width="162" height="145" />
+        <Location left="1607" top="512" />
+        <Size width="250" height="179" />
         <Collapsed>False</Collapsed>
         <Member type="Field">public int ID</Member>
         <Member type="Field">public string Name</Member>
         <Member type="Field">public string Description</Member>
         <Member type="Field">public List&lt;Contact&gt; Members</Member>
+        <Member type="Method">public void AddContact(Contact contact)</Member>
+        <Member type="Method">public void DeleteContact(int ID)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
         <Name>GroupHierarchy</Name>
         <Access>Public</Access>
         <Location left="1331" top="512" />
-        <Size width="178" height="145" />
+        <Size width="178" height="179" />
         <Collapsed>False</Collapsed>
         <Member type="Field">public int ID</Member>
         <Member type="Field">public string Name</Member>
         <Member type="Field">public string Description</Member>
         <Member type="Field">public List&lt;Group&gt; MemberGroups</Member>
+        <Member type="Method">public void AddNewGroup()</Member>
+        <Member type="Method">public void DeleteGroup(int ID)</Member>
         <Modifier>None</Modifier>
       </Entity>
     </Entities>
@@ -206,7 +210,7 @@
         <StartOrientation>Horizontal</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <BendPoint relativeToStartShape="True">
-          <X>1857</X>
+          <X>1882</X>
           <Y>626</Y>
         </BendPoint>
         <BendPoint relativeToStartShape="False">
@@ -226,12 +230,28 @@
           <Y>626</Y>
         </BendPoint>
         <BendPoint relativeToStartShape="False">
-          <X>1755</X>
+          <X>1692</X>
           <Y>460</Y>
         </BendPoint>
         <Direction>Unidirectional</Direction>
         <AssociationType>Aggregation</AssociationType>
       </Relationship>
     </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Event</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Event</Name>
+        <Access>Public</Access>
+        <Location left="727" top="234" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public List&lt;Contact&gt; Participants</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
   </ProjectItem>
 </Project>
